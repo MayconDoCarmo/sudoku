@@ -28,21 +28,11 @@ public class Main {
                         k -> k.split(";")[0],
                         v -> v.split(";")[1]
                 ));
-        var option = -1;
-        while (true){
-            System.out.println("Selecione uma das opções a seguir");
-            System.out.println("1 - Iniciar um novo Jogo");
-            System.out.println("2 - Colocar um novo número");
-            System.out.println("3 - Remover um número");
-            System.out.println("4 - Visualizar jogo atual");
-            System.out.println("5 - Verificar status do jogo");
-            System.out.println("6 - limpar jogo");
-            System.out.println("7 - Finalizar jogo");
-            System.out.println("8 - Sair");
+        while (true) {
+            printMenu();
+            int option = runUntilGetValidNumber(1, 8);
 
-            option = scanner.nextInt();
-
-            switch (option){
+            switch (option) {
                 case 1 -> startGame(positions);
                 case 2 -> inputNumber();
                 case 3 -> removeNumber();
@@ -56,8 +46,22 @@ public class Main {
         }
     }
 
+    private static void printMenu() {
+        System.out.println("""
+            Selecione uma das opções a seguir
+            1 - Iniciar um novo Jogo
+            2 - Colocar um novo número
+            3 - Remover um número
+            4 - Visualizar jogo atual
+            5 - Verificar status do jogo
+            6 - Limpar jogo
+            7 - Finalizar jogo
+            8 - Sair
+        """);
+    }
+
     private static void startGame(final Map<String, String> positions) {
-        if (nonNull(board)){
+        if (nonNull(board)) {
             System.out.println("O jogo já foi iniciado");
             return;
         }
