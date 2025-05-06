@@ -6,4 +6,8 @@
   <component name="ProjectType">
     <option name="id" value="jpab" />
   </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+>>>>>>> 5bea640 (Refatora o menu do game sudoku seguindo o conceito de DRY)
 </project>
