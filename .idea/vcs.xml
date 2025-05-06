@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sudoku" vcs="Git" />
+>>>>>>> 5bea640 (Refatora o menu do game sudoku seguindo o conceito de DRY)
   </component>
 </project>

@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/sudoku.iml" filepath="$PROJECT_DIR$/sudoku.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/5Sudoku.iml" filepath="$PROJECT_DIR$/.idea/5Sudoku.iml" />
+>>>>>>> 5bea640 (Refatora o menu do game sudoku seguindo o conceito de DRY)
     </modules>
   </component>
 </project>
